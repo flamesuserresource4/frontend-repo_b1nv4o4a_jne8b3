@@ -33,13 +33,16 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <button
             onClick={() => scrollToId('home')}
-            className="flex items-center gap-2 font-semibold text-neutral-900 dark:text-neutral-100"
+            className="flex items-center gap-3 font-semibold text-neutral-900 dark:text-neutral-100 group"
             aria-label="Go to home"
           >
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 text-white shadow">
+            <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 text-white shadow-md">
               <Shield size={18} />
             </span>
-            <span>CyberSec Portfolio</span>
+            <span className="tracking-tight">
+              <span className="bg-gradient-to-r from-neutral-900 to-neutral-600 dark:from-white dark:to-neutral-300 bg-clip-text text-transparent">Aditya Pratama</span>
+              <span className="ml-2 hidden sm:inline text-xs font-normal text-neutral-500 dark:text-neutral-400">Cybersecurity • Network</span>
+            </span>
           </button>
 
           <div className="hidden md:flex items-center gap-6 text-sm">

@@ -20,7 +20,7 @@ const certs = [
 export default function About() {
   return (
     <section id="about" className="relative py-20 sm:py-24">
-      <div className="absolute inset-0 -z-0 bg-gradient-to-b from-transparent via-blue-500/5 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/5 to-transparent" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-10 items-start">
           <motion.div

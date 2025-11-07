@@ -9,7 +9,7 @@ export default function App() {
   const jsonLd = useMemo(() => ({
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'Fachri Rizqi',
+    name: 'Aditya Pratama',
     jobTitle: 'Cybersecurity & Network Engineer',
     description:
       'Profesional cybersecurity, SOC/NOC, dan network engineering dengan fokus pada hardening, monitoring, dan incident response.',
@@ -31,9 +31,9 @@ export default function App() {
   }), []);
 
   useEffect(() => {
-    document.title = 'Fachri Rizqi — Cybersecurity, Network Engineering, SOC/NOC';
+    document.title = 'Aditya Pratama — Cybersecurity, Network Engineering, SOC/NOC';
     const metaDesc = document.querySelector('meta[name="description"]');
-    const content = 'Portfolio profesional bidang cybersecurity, SOC/NOC, dan network engineering. Keahlian: firewall, SIEM, routing, switching, incident response.';
+    const content = 'Portfolio profesional Aditya Pratama di bidang cybersecurity, SOC/NOC, dan network engineering. Keahlian: firewall, SIEM, routing, switching, incident response.';
     if (metaDesc) {
       metaDesc.setAttribute('content', content);
     } else {
@@ -45,7 +45,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50">
+    <div className="min-h-screen bg-gradient-to-b from-white to-neutral-50 text-neutral-900 dark:from-neutral-950 dark:to-neutral-900/60 dark:text-neutral-50">
       <Navbar />
       <main>
         <Hero />
@@ -53,9 +53,9 @@ export default function App() {
         <Projects />
         <Contact />
       </main>
-      <footer className="border-t border-black/5 dark:border-white/10 py-8">
+      <footer className="border-t border-black/5 dark:border-white/10 py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-sm flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-neutral-600 dark:text-neutral-400">© {new Date().getFullYear()} Fachri Rizqi. All rights reserved.</p>
+          <p className="text-neutral-600 dark:text-neutral-400">© {new Date().getFullYear()} Aditya Pratama. All rights reserved.</p>
           <p className="text-neutral-600 dark:text-neutral-400">Built with React + Tailwind • SEO-ready</p>
         </div>
       </footer>
